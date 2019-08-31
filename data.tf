@@ -9,10 +9,13 @@ variable "secret_pointers" {
       "provider/dockerhub/shaungc",
 
       "app/iriversland2",
+      "app/appl-tracky",
 
       "database/heroku_iriversland2",
+      "database/heroku_appl-tracky",
 
       "service/gmail",
+      "service/google-social-auth",
   ]
 }
 
