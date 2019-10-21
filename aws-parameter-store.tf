@@ -13,7 +13,7 @@ resource "aws_ssm_parameter" "secrets" {
   type  = "String"
   value = "${local.merged_secret_values[count.index]}"
 
-  # overwrite = true
+  overwrite = true
 
   # for each in resource: https://blog.gruntwork.io/terraform-tips-tricks-loops-if-statements-and-gotchas-f739bbae55f9
 #   dynamic "secret_name" {

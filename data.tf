@@ -13,6 +13,7 @@ variable "secret_pointers" {
 
       "database/heroku_iriversland2",
       "database/heroku_appl-tracky",
+      "database/postgres_cluster_kubernetes",
 
       "service/gmail",
       "service/google-social-auth",
