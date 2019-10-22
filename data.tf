@@ -15,7 +15,9 @@ variable "secret_pointers" {
     # "database/heroku_iriversland2", # deprecated, using `kubernetes_appl-tracky` instead now
     "database/kubernetes_appl-tracky",
     #   "database/heroku_appl-tracky", # deprecated, using `kubernetes_appl-tracky` instead now
+    
     "database/postgres_cluster_kubernetes",
+    "database/redis_cluster_kubernetes",
 
     "service/gmail",
     "service/google-social-auth",
