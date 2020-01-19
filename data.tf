@@ -12,19 +12,21 @@ variable "secret_pointers" {
     "app/appl-tracky",
 
     "database/kubernetes_iriversland2",
-    # "database/heroku_iriversland2", # deprecated, using `kubernetes_appl-tracky` instead now
     "database/kubernetes_appl-tracky",
+
+    # "database/heroku_iriversland2", # deprecated, using `kubernetes_appl-tracky` instead now
     #   "database/heroku_appl-tracky", # deprecated, using `kubernetes_appl-tracky` instead now
     
     "database/postgres_cluster_kubernetes",
     "database/redis_cluster_kubernetes",
-
+    "database/elasticsearch_cluster_kubernetes",
+    
     "service/gmail",
     "service/google-social-auth",
   ]
 }
 
 data "external" "secret_files" {
-  count   = "${length(var.secret_pointers)}"
-  program = ["echo", "${file("secrets/${var.secret_pointers[count.index]}.secrets.json")}"]
+  count   = length(var.secret_pointers)
+  program = ["echo", file("secrets/${var.secret_pointers[count.index]}.secrets.json")]
 }
