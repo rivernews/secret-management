@@ -23,6 +23,7 @@ variable "secret_pointers" {
     
     "service/gmail",
     "service/google-social-auth",
+    "service/slack-middleware-service",
   ]
 }
 
