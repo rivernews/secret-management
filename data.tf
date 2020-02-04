@@ -10,6 +10,7 @@ variable "secret_pointers" {
 
     "app/iriversland2",
     "app/appl-tracky",
+    "app/slack-middleware-service",
 
     "database/kubernetes_iriversland2",
     "database/kubernetes_appl-tracky",
@@ -23,7 +24,6 @@ variable "secret_pointers" {
     
     "service/gmail",
     "service/google-social-auth",
-    "service/slack-middleware-service",
   ]
 }
 
