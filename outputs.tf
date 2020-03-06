@@ -1,3 +1,3 @@
-output "merged_pairs" {
-    value = local.merged_pairs
-}
+# output "merged_pairs" {
+#     value = local.merged_pairs
+# }

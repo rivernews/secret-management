@@ -12,12 +12,6 @@ variable "secret_pointers" {
     "app/appl-tracky",
     "app/slack-middleware-service",
 
-    # "database/kubernetes_iriversland2", # deprecated, TODO: remove this file
-    # "database/kubernetes_appl-tracky", # deprecated, TODO: remove this file
-
-    # "database/heroku_iriversland2", # deprecated, using `kubernetes_appl-tracky` instead now
-    #   "database/heroku_appl-tracky", # deprecated, using `kubernetes_appl-tracky` instead now
-    
     "database/postgres_cluster_kubernetes",
     "database/redis_cluster_kubernetes",
     "database/elasticsearch_cluster_kubernetes",
