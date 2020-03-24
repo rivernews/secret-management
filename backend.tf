@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
     bucket = "iriversland-cloud"
-    key    = "terraform/selenium-service.remote-terraform.tfstate"
+    key    = "terraform/secret-management.remote-terraform.tfstate"
   }
 }
