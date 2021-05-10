@@ -20,7 +20,8 @@ variable "secret_pointers" {
     "service/google-social-auth",
     "service/selenium-service",
     "service/glassdoor",
-    "service/grafana"
+    "service/grafana",
+    "service/code-server"
   ]
 }
 
