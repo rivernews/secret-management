@@ -15,12 +15,14 @@ variable "secret_pointers" {
     "database/postgres_cluster_kubernetes",
     "database/redis_cluster_kubernetes",
     "database/elasticsearch_cluster_kubernetes",
-    
+
     "service/gmail",
     "service/google-social-auth",
     "service/selenium-service",
     "service/glassdoor",
-    "service/grafana"
+    "service/grafana",
+    "service/code-server",
+    "service/slack"
   ]
 }
 
